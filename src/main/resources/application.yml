@@ -1,0 +1,43 @@
+server:
+  port: 18888
+
+spring:
+  application:
+    name: kmjoo91-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:KimMinJoo/spring-cloud-config.git
+          ignoreLocalSshSettings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEoQIBAAKCAQEA3CdK1m+sCAtsv5Fjo5U+dBLlO6AkwwCNep/RF6N6s8t8fm1E
+            oYrdAm5qxUoGDg4Zz1DHtlp75t4RNgJr+4vGuI0UibPZDHTcRulqLCrbFAPH3UB7
+            ddhTeZ+MHnu2FzpJyLcN8hqg7rvrgKD/R27RD93Q0WvfpGu0LmWwm2edLwokR4lf
+            prq39tJy1KcOE94A656svKC7/FxGIye666YFakJftndm9V2GfvWwo8ItbV7LIYW/
+            niBJ6Lnn3NAUrlQzVRCXf0kpvgPtW1XTQt8CFs3WGkf5uQvbmPEiDF5oWNbld7Ta
+            m4oVqUcDUUkXias1bE8+Q4GfkKLhbrfl4xQNJwIBIwKCAQBkpD93+IkoP7yvWGgQ
+            RDnOqY1dFgItQhTKV7AKzmP6a6agMfN9DEfGmOBaMHfL6TBexdej0Ze5/x3PjBQb
+            OJVbrjVGQ5ZsGCovC55AE5dZm1QNX05hwfpGOk6u2XfQGqVjEdp9TgBtIrTNFmYS
+            BsX4n+puXTMJVc62H9u0wabw7df0IRTOk8QAO979sjEkD0LspjGMObnvF1QVEPZ4
+            xhNlLR+7WO2JPYoa++H+clbNHIuIW4BL1mC5PCP+LwB+74RR1uwR9LL6bJrFVOmd
+            HNMZ1C3cp3pKacoL4ZFJcIWqDH50cCrp6DP1UeFed1nyxXqooBFbxAoeUOKuFTlU
+            9ZiLAoGBAP3zoE9lGDlt14PBEXoPD95gbbRcZ6njtrALaaRXR8eSSwyTz2n2a/Su
+            QOV5Kll8BFogcTmTkupHDZtUs51PeI1P2/mCL2DTxz92e9hAl9ybY1GOtNgL0UM2
+            eUhJPEd0ag5MEs0rVolI4Iy2oWeqm05YaBpYpuOOzKCwjju1GTBpAoGBAN3t4LK9
+            v0HId/dIn8iF7MAlhWv9estdoo4pqPtsLPNqpJ241XViuvO1rczN/bYQq//GzF1k
+            qGwMeL3MFaZJL7SSLnmV0oFmbxtVMDv6mBey6mA45MYqcy5oemvye/yAcYKM7K+Q
+            h5q3w1mcApsb/+rDCP3yHeXfhVDhWzzEIZ8PAoGAFcRs05rzcqMD2Bfc7TR9s/mj
+            ANS4baXN1JNDkb5WnBPajAyrYNqbigBOtJVbZsF8t0Sb/Z7vVejVR9QPZUFTedOl
+            JAPYLN7z0j1bEokxlpD54mtRVFjIyz8u95E/rlpvfZF99FQr/SOA9h5IWVfEK0lo
+            AkIc7u77mL6tGw+F0PMCgYByIpDQ8960HfSNzZQAued4wtbnFKWNKNdBzEhGyes7
+            W2qaQczdSLfrDPpMEiq1Z6jp8TXm409NgsHAshnDO5TghbGAW64WqbV7xWlDau8i
+            IX/ZttwOJHXAGHl5WCKB26gXQSlEWPVIQT/k8SXpXttiyrQq1Enj70vgc+XHes92
+            XwKBgQDZlCBlhDMFAuI010U2M3DGV9cTW+w68D26npLV5y1BRYKXTHsqXDZOXrCw
+            zqbmYSNvZTzX0+hjUVn4pOn/BRMPnXJ7eGxc0nGiQ/NYC4l9f6cF3EFP5AEMn0xz
+            gUDpV/uLceWgWDWGuz9Su6Kl54wrcfHALACwy8wrqQBGCVH8eQ==
+            -----END RSA PRIVATE KEY-----
+          searchPaths: '{application}'
+          force-pull: true
+          deleteUntrackedBranches: true
